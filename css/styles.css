@@ -26,24 +26,18 @@ body{
   display: flex;
   flex-direction: column;
 }
-
 .fixed-header{
   height: 100%;
 }
-
 .fixed-header .page{
   overflow-y: scroll;
 }
-
 .fixed-footer .page{
   flex: 1 auto;
 }
 .fixed-footer .footer{
   margin-top: auto;
 }
-
-
-
 .header__contacts{
   display: flex;  
   font-size: 13px;
@@ -54,12 +48,11 @@ body{
   color: #aad4ff;
 }
 .header__contacts__left {
-  padding: 13px 16px;
+  padding: 10px 16px;
   color: #FFF;
 }
 .header__contacts__right{
-  margin: 13px 16px 13px auto;
-  
+  margin: 10px 16px 13px auto;
 }
 .advantages{
   display: flex;
@@ -79,15 +72,12 @@ body{
   padding-left: 35px;
   margin-left: 10px;
 }
-
 .advantage_bloc2{
   background-image: url('../img/advantage-bg1.jpg'); 
 }
-
 .advantage_bloc3{
   background-image: url('../img/advantage-bg2.jpg'); 
 }
-
 .advantage_bloc4{
   background-image: url('../img/advantage-bg3.jpg'); 
 }
