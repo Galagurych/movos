@@ -38,28 +38,30 @@ body{
 .fixed-footer .footer{
   margin-top: auto;
 }
+
+
 .header__contacts{
   display: flex;  
-  font-size: 13px;
-  height: 35px;  
+  font-size: 13px;    
   background-color: #3f4e86;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header__contacts a{
   color: #aad4ff;
 }
 .header__contacts__left {
-  padding: 10px 16px;
+  padding-left: 16px;
   color: #FFF;
 }
 .header__contacts__right{
-  margin: 10px 16px 13px auto;
+  margin: 0 16px 0 auto;
 }
-.advantages{
-  display: flex;
-  flex-flow: row wrap;
-}
+
+
 .advantage{
-  background: #D1C3C3;
+  background: ededed;
   height: 52px;
   display: flex;
   align-items: center;
@@ -70,13 +72,13 @@ body{
   flex-basis: 25%;
 }
 
-.advantage_bloc2{
+.advantage_block2{
   background-image: url('../img/advantage-bg1.jpg');  
 }
-.advantage_bloc3{
+.advantage_block3{
   background-image: url('../img/advantage-bg2.jpg');  
 }
-.advantage_bloc4{
+.advantage_block4{
   background-image: url('../img/advantage-bg3.jpg');  
 }
 .advantage__text{
@@ -89,19 +91,16 @@ body{
 }
 
 
- a{
+a{
   text-decoration: none;
-}
-   
+}   
 .menu ul {
-  list-style: none;
-  
+  list-style: none;  
 }
-
-.submenu {
+.menu__submenu {
   display: none;
 }
-.topmenu li:hover .submenu {
+.menu__topmenu li:hover .menu__submenu {
   display: block;
 }
 li {
@@ -114,7 +113,46 @@ li {
   border-bottom: 1px solid #d7d7d7;  
 }
 
-.submenu li {
-  background: #49568a;
-
+.text__title{
+  font-size: 24px;
+  font-weight: bold;
+  color: #626c97;
+  padding: 20px 0;
 }
+.text__text{
+   font-size: 13px;
+}
+.text__text span {
+  color: #3f4e86;
+} 
+.text__title_black{
+  color: black;
+}
+
+
+.block{
+  background: #3f4e86;
+  color: #cacfe2;
+  font-size: 12px;
+  padding: 15px 10px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+
+.footer__contacns{
+  display: flex;  
+  font-size: 12px;  
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-top: #8a8a8a 1px solid;
+}
+.footer__contacns__right{
+  margin: 0 0 0 auto;
+}
+
+

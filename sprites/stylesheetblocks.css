@@ -1,0 +1,65 @@
+.sprites {
+    background-image: url(spritesheetblocks.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bookcase {
+    width: 26px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-bulb {
+    width: 39px;
+    height: 40px;
+    background-position: -41px -5px;
+}
+
+.sprite-calendar {
+    width: 40px;
+    height: 38px;
+    background-position: -90px -5px;
+}
+
+.sprite-clock {
+    width: 35px;
+    height: 40px;
+    background-position: -90px -53px;
+}
+
+.sprite-hat {
+    width: 36px;
+    height: 40px;
+    background-position: -140px -5px;
+}
+
+.sprite-head {
+    width: 27px;
+    height: 32px;
+    background-position: -5px -55px;
+}
+
+.sprite-horn {
+    width: 29px;
+    height: 28px;
+    background-position: -42px -55px;
+}
+
+.sprite-opinion {
+    width: 30px;
+    height: 32px;
+    background-position: -135px -55px;
+}
+
+.sprite-person-half {
+    width: 40px;
+    height: 36px;
+    background-position: -5px -97px;
+}
+
+.sprite-standing-man {
+    width: 26px;
+    height: 40px;
+    background-position: -135px -97px;
+}
