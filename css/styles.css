@@ -91,7 +91,13 @@ body{
   padding-right: 10px;
 }
 
+.advantage__icon {  
+  display: flex;
+  flex-basis: 70px;
+  align-items: center;
+  justify-content:  center;
 
+}
 
 .menu{
   margin-bottom: 10px;
@@ -156,6 +162,8 @@ li {
   width: 60px; 
   height: 60px;
 }
+
+
 
 .service{
   border-bottom: 1px #dadada solid; 

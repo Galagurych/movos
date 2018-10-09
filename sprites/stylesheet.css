@@ -1,8 +1,7 @@
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
-    display: block;
-    margin: 22px;
+    
 }
 
 .sprite-icon-piople {
