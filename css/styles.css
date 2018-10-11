@@ -9,10 +9,19 @@ html{
 }
 body{
   min-height: 100%;
-  -webkit-box-shadow:inset 0 3px 0 0 #3f4e86;
-  box-shadow:inset 0 3px 0 0 #3f4e86;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  padding-top: 20px;
+  font-size: 13px;
+}
+.header{
+ -webkit-box-shadow:inset 0 3px 0 0 #3f4e86;
+  box-shadow:inset 0 3px 0 0 #3f4e86;
+ padding-top: 25px ;
+ position: relative;
+ z-index: 2;
+}
+.page{
+  position: relative;
+ z-index: 1;
 }
 .wrapper{
   padding: 0 20px;
@@ -38,29 +47,56 @@ body{
 .fixed-footer .footer{
   margin-top: auto;
 }
+[href^="tel:"] {
+  text-decoration: none;
+  white-space: nowrap;
+}
 
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 230px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,ffffff+100 */
+  background: rgb(234,234,234); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 
-.header__contacts{
+}
+
+.header__top{
   display: flex;  
-  font-size: 13px;    
+  font-size: 12px;    
   background-color: #3f4e86;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content:  space-between;
+  padding: 10px 15px;
+  margin-bottom: 1px;
+  color: #fff;
+
 }
-.header__contacts a{
+.header__top a{
+  display: flex;
+  padding-left: 5px;
+  flex-direction: row;
   color: #aad4ff;
+  justify-content:  center;
+  font-size: 13px;
 }
-.header__contacts__left {
-  padding-left: 16px;
-  color: #FFF;
+.header__top > a:last-child{
+  flex-direction: row-reverse;
 }
-.header__contacts__right{
-  margin: 0 16px 0 auto;
+.header__top > div:first-child{
+ display: flex;
 }
 
-.advantages{
+.header__bottom{
   margin-bottom: 10px;
+  display: flex;
 }
 .advantage{
   background: ededed;
@@ -71,7 +107,9 @@ body{
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 0 5px;
   flex-basis: 25%;
+
 }
 .advantage_block2{
   background-image: url('../img/advantage-bg1.jpg');  
@@ -91,9 +129,11 @@ body{
   padding-right: 10px;
 }
 
-.advantage__icon {  
+.advantage__icon, .block__icon {  
   display: flex;
   flex-basis: 70px;
+  /*max-width: 70px;*/
+  min-width: 70px;
   align-items: center;
   justify-content:  center;
 
@@ -154,16 +194,15 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin: 10px;
+  
 }
 .block_circle{
   border-radius: 100%;
   width: 60px; 
   height: 60px;
 }
-
-
 
 .service{
   border-bottom: 1px #dadada solid; 
@@ -172,13 +211,18 @@ li {
 
 }
 .possibility__text{
+  display: flex;
   color: #3f4e86;
-  padding: 10px;
+  margin: 10px;
+  
+
 } 
 .possibility{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  
+
 }
 p{
   margin: 10px 0;
@@ -188,17 +232,63 @@ p{
 }
 
 
+@media (max-width: 560px ){
+  .header__top{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+   } 
+ }
+
+   @media (max-width: 460px ) {
+    .header__top > div:first-child {
+    flex-direction: column;
+   }  
+}
+@media (max-width: 850px ){
+  .header__bottom{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__bottom > *{
+    flex: 1 50%;
+  }
+}
+@media (max-width: 500px ){
+  .header__bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__bottom > *{
+    flex: 1 100%;
+  }
+}
 
 
-.footer__contacns{
+
+.footer__contacns {
   display: flex;  
   font-size: 12px;  
   padding-top: 15px;
   padding-bottom: 20px;
   border-top: #8a8a8a 1px solid;
+  color: #6b6b6b;
+  justify-content: space-between; 
 }
-.footer__contacns__right{
-  margin: 0 0 0 auto;
+.footer__contacns a{
+  text-decoration: none;
+  color: #6b6b6b;
 }
 
 
+
+  
+@media (max-width: 460px ){
+  .footer__contacns {
+    display: flex;
+    flex-wrap: wrap;         
+    }
+     .footer__contacns > *{
+       flex: 1 100%;
+       margin-bottom: 15px;
+  }
