@@ -10,12 +10,13 @@ html{
 body{
   min-height: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 13px;  
 }
 .header{
  -webkit-box-shadow:inset 0 3px 0 0 #3f4e86;
   box-shadow:inset 0 3px 0 0 #3f4e86;
  padding-top: 25px ;
+ margin-bottom: 20px;
  position: relative;
  z-index: 2;
 }
@@ -33,21 +34,48 @@ body{
   width: 100%;
   height: auto;
 }
+
+@media (min-width: 560px){
+  .col-phablet-1-4{
+   max-width: 33.33%;
+  }
+ .col-phablet-3-4{
+   max-width: 66.66%;   
+  }
+ .col-phablet-1-3{
+   max-width: 50%;   
+  } 
+}
+
+@media (min-width: 768px){
+  .col-tablet-1-4{
+   max-width: 33.33%;
+  }
+ .col-tablet-3-4{
+   max-width: 66.66%;
+  }
+ .col-tablet-1-3{
+   max-width: 50%;
+  }
+}
+
 @media (min-width: 960px){
   .col-desktop-1-4{
    max-width: 25%;
- }
+  } 
   .col-desktop-3-4{
    max-width: 75%; 
-}
+  }
  .col-desktop-1-3{
   max-width: 33.33%; 
- }
+  }
+}
 .row{
   margin: 0 -20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
+
 .wrapper_full-width{
   max-width: 940px;
 }
@@ -170,7 +198,7 @@ li {
   display: table;
   height: 30px;
   background: #e4e5e9;
-  min-width: 25%;
+  min-width: 100%;
   padding-left: 13px;
   box-shadow:inset 0 1px 0 0 #f4f4f4;
   border-bottom: 1px solid #d7d7d7;  
@@ -193,16 +221,13 @@ li {
   font-size: 17px;
   color: black;
 }
-.blocks { 
-display: flex;
-flex-wrap: wrap;
-}
-.block{
+
+.painted-block{
   background: #3f4e86;
   color: #cacfe2;
   font-size: 12px;
   padding: 15px 10px;
-  max-height: 140px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,12 +235,18 @@ flex-wrap: wrap;
   margin-bottom: 20px;
   max-width: 220px;
   text-align: center; 
-   
+
 }
-.block_circle{
+.block__circle{
   border-radius: 100%;
   width: 60px; 
   height: 60px;
+  background: #3f4e86;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 .service{
   border-bottom: 1px #dadada solid; 
@@ -231,6 +262,7 @@ flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
 }
 p{
   margin: 10px 0;
