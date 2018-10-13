@@ -11,7 +11,22 @@ body{
   min-height: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;  
+  line-height: 1.5;
 }
+/*h1,h2{
+  font-weight: normal;
+}
+.content-text h1, .mainheading{
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: 3f4e86;
+}
+.content-text p{
+  margin-bottom: 10px;
+
+}*/
+
+
 .header{
  -webkit-box-shadow:inset 0 3px 0 0 #3f4e86;
   box-shadow:inset 0 3px 0 0 #3f4e86;
@@ -270,7 +285,7 @@ li {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  max-width: 220px;
+  
   text-align: center; 
 
 }
