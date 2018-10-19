@@ -14,11 +14,10 @@
       <div class="header__top">        
           <div>
             Багатоканальний телефон: 
-            <a href="tel">+38 (097) 909-69-22</a>
+            <a href="tel:">+38 (097) 909-69-22</a>
           </div>   
           <a href="#">Наші контакти</a>                
       </div> 
-
       <div class="header__bottom">
         <div class="advantage advantage_logo">
           <a href="#"><img src="img/logo.png"></a>                            
@@ -51,16 +50,21 @@
           </div>          
         </div> 
       </div> 
-
     </div>    
   </div>
 
   <div class="page">
-    <div class="wrapper">
-      
+    <div class="wrapper">      
       <div class="row">
         <div class="col-desktop-1-4 col-tablet-1-4 col-phablet-1-4">
-          <div class="menu">        
+          <div id="menu-opener" class="menu-opener">
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="menu" id="menu">        
             <ul>
               <li><a href="">Головна</a></li>
               <li><a href="">Про нас</a></li>
@@ -68,6 +72,13 @@
               <li class="active"><a href="#">Англійька мова</a>  
                 <ul>
                   <li><a href="">Вивчення англійської мови</a></li>
+                  <li><a href="">Індивідуальні курси</a></li>
+                  <li><a href="">Поглиблені курси</a></li>
+                </ul>
+              </li>
+              <li><a href="">Французька мова</a>  
+                <ul>
+                  <li><a href="">Вивчення французької мови</a></li>
                   <li><a href="">Індивідуальні курси</a></li>
                   <li><a href="">Поглиблені курси</a></li>
                 </ul>
@@ -82,8 +93,7 @@
               <li><a href="">Контакти</a></li>
             </ul>          
           </div>
-        </div>
-        
+        </div>        
         <div class="col-desktop-3-4 col-tablet-3-4 col-phablet-3-4">
           <div class="content-text">
             <h1>Найчастіші питання</h1>            
@@ -115,30 +125,25 @@
                   колись вчили англійську, але забули іі повністю, не використовували її або так і не навчились будувати речення          
                 </div>
               </div>
-            </div>
-              
+            </div>              
             <div class="col-desktop-1-3 col-tablet-1-3 col-phablet-3-4">
               <div class="painted-block">
-                <div class="sprites sprite-clock">
-                  
+                <div class="sprites sprite-clock">                  
                 </div>
                 <div class="painted-block__text">
                   хочете швидко та ефективно вивчити мову          
                 </div>
               </div>
             </div>
-
             <div class="col-desktop-1-3 col-tablet-1-3 col-phablet-3-4">
               <div class="painted-block">
-                <div class="sprites sprite-person-half">
-                  
+                <div class="sprites sprite-person-half">                  
                 </div>
                 <div class="painted-block__text">
                   набридло відчувати збентеження у діалозі з іноземцем         
                 </div>
               </div>
             </div>
-
             <div class="col-desktop-1-3 col-tablet-1-3 col-phablet-3-4" >
               <div class="painted-block">
                 <div class="sprites sprite-hat">                   
@@ -148,7 +153,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-desktop-1-3 col-tablet-1-3 col-phablet-3-4">
               <div class="painted-block">
                 <div class="sprites sprite-bulb">                  
@@ -160,7 +164,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-desktop-1-3 col-tablet-1-3 col-phablet-3-4">
               <div class="painted-block">                  
                 <div class="sprites sprite-calendar">                                        
@@ -171,14 +174,13 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
   
   <div class="footer">
-    <div class="wrapper wrapper_full-width">
+    <div class="wrapper">
       <div class="footer__contacns">
         <div class="footer__left">
           ©2014 Мовус Всі права захищені.

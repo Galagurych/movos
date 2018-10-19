@@ -1,21 +1,17 @@
 .sprite {
     background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
 }
-
 .sprite-icon-piople {
     width: 32px;
     height: 26px;
     background-position: -5px -5px;
 }
-
 .sprite-icon-tie {
     width: 17px;
     height: 32px;
     background-position: -47px -5px;
 }
-
 .sprite-icon-tv {
     width: 25px;
     height: 32px;
