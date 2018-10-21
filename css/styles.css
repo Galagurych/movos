@@ -71,7 +71,7 @@ body{
    max-width: 33.33%;
   }
  .col-phablet-3-4{
-   max-width: 66.66%;   
+   max-width: 66.66%;    
   } 
   .col-phablet-1-2{
    max-width: 50%;   
@@ -229,8 +229,8 @@ body:before{
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
   background: #3f4e86;
   opacity: 0.7;   
