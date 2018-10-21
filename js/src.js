@@ -1,7 +1,7 @@
 var menuOpener = document.getElementById('menu-opener');
 var menu = document.getElementById('menu');
 
-
+if(menuOpener){
 menuOpener.addEventListener(
   'click',
   function (){
@@ -12,4 +12,7 @@ menuOpener.addEventListener(
       menuOpener.classList.add("active");
       menu.classList.add("active");
     } 
-})
+ })
+}
+
+

@@ -1,19 +1,119 @@
-.sprite {
+.sprites {
     background-image: url(spritesheet.png);
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
 }
+
+.sprite-bookcase {
+    width: 26px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-bulb {
+    width: 39px;
+    height: 40px;
+    background-position: -41px -5px;
+}
+
+.sprite-bulb-painted {
+    width: 39px;
+    height: 40px;
+    background-position: -90px -5px;
+}
+
+.sprite-calendar {
+    width: 40px;
+    height: 38px;
+    background-position: -139px -5px;
+}
+
+.sprite-calendar-painted {
+    width: 40px;
+    height: 38px;
+    background-position: -139px -53px;
+}
+
+.sprite-clock {
+    width: 35px;
+    height: 40px;
+    background-position: -5px -101px;
+}
+
+.sprite-clock-painted {
+    width: 35px;
+    height: 40px;
+    background-position: -50px -101px;
+}
+
+.sprite-hat {
+    width: 36px;
+    height: 40px;
+    background-position: -95px -101px;
+}
+
+.sprite-hat-painted {
+    width: 36px;
+    height: 40px;
+    background-position: -141px -101px;
+}
+
+.sprite-head {
+    width: 27px;
+    height: 32px;
+    background-position: -5px -151px;
+}
+
+.sprite-horn {
+    width: 29px;
+    height: 28px;
+    background-position: -42px -151px;
+}
+
 .sprite-icon-piople {
     width: 32px;
     height: 26px;
-    background-position: -5px -5px;
+    background-position: -81px -151px;
 }
+
 .sprite-icon-tie {
     width: 17px;
     height: 32px;
-    background-position: -47px -5px;
+    background-position: -5px -53px;
 }
+
 .sprite-icon-tv {
     width: 25px;
     height: 32px;
-    background-position: -5px -47px;
+    background-position: -123px -151px;
+}
+
+.sprite-opinion {
+    width: 30px;
+    height: 32px;
+    background-position: -158px -151px;
+}
+
+.sprite-person-half {
+    width: 40px;
+    height: 36px;
+    background-position: -189px -5px;
+}
+
+.sprite-person-half-painted {
+    width: 40px;
+    height: 36px;
+    background-position: -189px -51px;
+}
+
+.sprite-standing-man {
+    width: 26px;
+    height: 40px;
+    background-position: -189px -97px;
+}
+
+.sprite-standing-man-painted {
+    width: 26px;
+    height: 40px;
+    background-position: -198px -147px;
 }
